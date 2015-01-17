@@ -1,6 +1,12 @@
 'use strict';
 
-angular.module('HsaCalculator', ['ionic', 'config', 'HsaCalculator.controllers', 'HsaCalculator.services'])
+angular.module('HsaCalculator', [
+  'ionic',
+  'config',
+  'ngMaterial',
+  'HsaCalculator.controllers',
+  'HsaCalculator.services'
+])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -14,6 +20,12 @@ angular.module('HsaCalculator', ['ionic', 'config', 'HsaCalculator.controllers',
       StatusBar.styleDefault();
     }
   });
+})
+
+.config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryColor('pink')
+    .accentColor('orange');
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -74,6 +86,12 @@ angular.module('HsaCalculator', ['ionic', 'config', 'HsaCalculator.controllers',
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
+
+  angular.module('myApp', []).run(function($rootScope, $state) {
+    $rootScope.go = function(state, params, options) {
+      $state.go(state, params, options);
+    };
+  });
 
 });
 
