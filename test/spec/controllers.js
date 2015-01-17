@@ -1,25 +1,25 @@
 'use strict';
 
-describe('Controller: PetIndexCtrl', function () {
+describe('Controller: FriendsCtrl', function () {
 
   var should = chai.should();
 
   // load the controller's module
   beforeEach(module('HsaCalculator'));
 
-  var PetIndexCtrl,
+  var FriendsCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    PetIndexCtrl = $controller('PetIndexCtrl', {
+    FriendsCtrl = $controller('FriendsCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of pets to the scope', function () {
-    scope.pets.should.have.length(4);
+  it('should attach a list of friends to the scope', function () {
+    scope.friends.should.have.length(4);
   });
 
 });

@@ -1,6 +1,6 @@
 
 
-## Built with Ionic Framework generator [![Build Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url]
+## Built with Ionic Framework generator 
 
 > Yeoman generator for creating Ionic hybrid mobile applications using AngularJS and Cordova - lets you quickly set up a project with sensible defaults and best practices.
 

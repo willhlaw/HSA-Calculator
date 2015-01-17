@@ -366,7 +366,6 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/lib/ionic/release/js/ionic-angular.js',
           '<%= yeoman.app %>/lib/angular-mocks/angular-mocks.js',
           '<%= yeoman.app %>/<%= yeoman.scripts %>/**/*.js',
-          'test/mock/**/*.js',
           'test/spec/**/*.js'
         ],
         autoWatch: false,
@@ -388,7 +387,8 @@ module.exports = function (grunt) {
         // Change this to 'Chrome', 'Firefox', etc. Note that you will need
         // to install a karma launcher plugin for browsers other than Chrome.
         browsers: ['PhantomJS'],
-        background: true
+        background: true,
+        logLevel: 'DEBUG'
       },
       continuous: {
         browsers: ['PhantomJS'],
