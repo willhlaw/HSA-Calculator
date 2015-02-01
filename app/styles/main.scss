@@ -1,1 +1,7 @@
 // Your application styles go here
+
+// adjust icon down to center within an md-fab class (i.e. fab button)
+.md-fab ng-md-icon {
+	position: relative;
+	top: 2.5px;
+}

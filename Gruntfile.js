@@ -379,13 +379,17 @@ module.exports = function (grunt) {
           'app/lib/angular-animate/angular-animate.js',
           'app/lib/angular-sanitize/angular-sanitize.js',
           'app/lib/angular-ui-router/release/angular-ui-router.js',
+          'app/lib/collide/collide.js',
           'app/lib/ionic/release/js/ionic.js',
           'app/lib/ionic/release/js/ionic-angular.js',
           'app/lib/angular-aria/angular-aria.js',
           'app/lib/hammerjs/hammer.js',
           'app/lib/angular-material/angular-material.js',
+          'app/lib/localforage/dist/localforage.js',
+          'app/lib/angular-localforage/dist/angular-localForage.js',
+          'app/lib/angular-material-icons/angular-material-icons.js',
+          'app/lib/svg-morpheus/compile/minified/svg-morpheus.js',
           'app/lib/angular-mocks/angular-mocks.js',
-          'app/lib/angular-scenario/angular-scenario.js',
           // endbower
           '<%= yeoman.app %>/<%= yeoman.scripts %>/**/*.js',
           'test/spec/**/*.js'
